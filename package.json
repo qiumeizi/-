@@ -1,0 +1,26 @@
+{
+  "name": "vision-insight",
+  "version": "1.0.0",
+  "description": "境之视界 - 企业商业模式分析和投资决策平台",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "keywords": [
+    "business-analysis",
+    "investment",
+    "decision-making",
+    "enterprise",
+    "financial-modeling"
+  ],
+  "author": "Vision Insight Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
